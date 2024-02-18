@@ -4,26 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f67b5a-edea-49ff-87c3-fa3bd2e4ea27" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/enums/CustomerStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/enums/EntityEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/enums/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/general/BaseAdditionalFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/general/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/main.java" afterDir="false" />
+    <list default="true" id="d6f67b5a-edea-49ff-87c3-fa3bd2e4ea27" name="Changes" comment="Add customer,order and bill entity and enums.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/CustomerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/CustomerDTOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/GenericDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/service/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +25,7 @@
       <list>
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -70,7 +61,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -122,25 +113,46 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708285498190</updated>
-      <workItem from="1708285498712" duration="4207000" />
+      <workItem from="1708285498712" duration="9717000" />
     </task>
+    <task id="LOCAL-00001" summary="Add customer,order and bill entity and enums.">
+      <option name="closed" value="true" />
+      <created>1708290047143</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708290047143</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add customer,order and bill entity and enums." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add customer,order and bill entity and enums." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/main.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/CustomerDTOImpl.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/main.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="3" />
+          <line>14</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/service/CustomerServiceImpl.java</url>
+          <line>13</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

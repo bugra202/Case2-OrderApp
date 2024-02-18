@@ -1,12 +1,9 @@
 package com.bugratasdemir.case2orderapp.entity;
 
-import com.bugratasdemir.case2orderapp.enums.CustomerStatus;
 import com.bugratasdemir.case2orderapp.general.BaseEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.time.LocalDate;
 
 @Getter
 @Setter
