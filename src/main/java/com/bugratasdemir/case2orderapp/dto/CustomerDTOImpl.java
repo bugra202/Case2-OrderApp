@@ -22,8 +22,4 @@ public class CustomerDTOImpl implements GenericDTO{
         return customerList;
     }
 
-    //    public List<Customer> getByAllCustomer() {
-//        //customerList.stream().forEach(System.out::println);
-//        return customerList;
-//    }
 }
