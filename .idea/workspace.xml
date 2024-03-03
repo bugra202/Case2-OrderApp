@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6f67b5a-edea-49ff-87c3-fa3bd2e4ea27" name="Changes" comment="Add customer,order and bill entity and enums.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/CustomerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/CustomerDTOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/GenericDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/BillDTOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/enums/CategoryEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/service/BillService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/service/BillServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/CustomerDTOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/CustomerDTOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/GenericDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/GenericDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Bill.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/entity/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/enums/OrderStatus.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/service/CustomerServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +31,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -39,6 +47,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2dAz1JMviedYMENkFOZMHpSbP4x" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,7 +59,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.main (1).executor": "Debug",
-    "Application.main.executor": "Debug",
+    "Application.main.executor": "Run",
     "Maven.Case2-OrderApp [clean].executor": "Run",
     "Maven.Case2-OrderApp [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -74,6 +86,7 @@
       <recent name="C:\Users\90543\Desktop\n11-bootcamp\Case2-OrderApp\src\main\java\com\bugratasdemir\case2orderapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bugratasdemir.case2orderapp.dto" />
       <recent name="com.bugratasdemir.case2orderapp.enums" />
     </key>
   </component>
@@ -98,12 +111,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.main" />
         <item itemvalue="Application.main (1)" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -114,6 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708285498190</updated>
       <workItem from="1708285498712" duration="9717000" />
+      <workItem from="1709465462203" duration="11065000" />
     </task>
     <task id="LOCAL-00001" summary="Add customer,order and bill entity and enums.">
       <option name="closed" value="true" />
@@ -137,22 +169,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/dto/CustomerDTOImpl.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/main.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bugratasdemir/case2orderapp/service/CustomerServiceImpl.java</url>
-          <line>13</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="10" />
+          <line>31</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

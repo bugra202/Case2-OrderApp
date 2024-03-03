@@ -1,48 +1,40 @@
 package com.bugratasdemir.case2orderapp.entity;
 
-public class Bill {
+import com.bugratasdemir.case2orderapp.enums.CategoryEnum;
+import lombok.Getter;
+import lombok.Setter;
 
+import java.time.LocalDate;
+
+@Getter
+@Setter
+public class Bill extends Company {
     private Long id;
-
     private Long billNo;
-
     private Double cost;
+    private Long customerId;
+    private LocalDate billingDate;
 
-    public Bill(java.lang.Long billNo, java.lang.Double cost) {
-        this.billNo = billNo;
-        this.cost = cost;
-    }
-
-    public java.lang.Long getId() {
-        return id;
-    }
-
-    public void setId(java.lang.Long id) {
+    public Bill(String companyName, CategoryEnum category, Long id, Long billNo, Double cost, Long customerId, LocalDate billingDate) {
+        super(companyName, category);
         this.id = id;
-    }
-
-    public java.lang.Long getBillNo() {
-        return billNo;
-    }
-
-    public void setBillNo(java.lang.Long billNo) {
         this.billNo = billNo;
-    }
-
-    public java.lang.Double getCost() {
-        return cost;
-    }
-
-    public void setCost(java.lang.Double cost) {
         this.cost = cost;
+        this.customerId = customerId;
+        this.billingDate = billingDate;
+    }
+    public Bill(String companyName, CategoryEnum category) {
+        super(companyName, category);
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
+    @Override
+    public String toString() {
         return "Bill{" +
                 "id=" + id +
                 ", billNo=" + billNo +
                 ", cost=" + cost +
+                ", customerId=" + customerId +
+                ", billingDate=" + billingDate +
                 '}';
     }
 }
